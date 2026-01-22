@@ -1,7 +1,11 @@
 # 虚拟视觉：场景体重建
 ## 演示视频
-由于当时主摄像头的20米视觉裁剪，这个场景体只显示了一半即被截断，但仍可以进行视觉观察。左上角为人物的第一人称视角，和手机摄像头完全不相关。
-https://github.com/user-attachments/assets/571458db-7395-4fef-b2ac-c9015a23db59
+由于当时主摄像头的20米视觉裁剪，这个场景体只显示了一半即被截断，但仍可以进行视觉观察。左上角为人物的第一人称视角，和手机摄像头完全不相关。现在调试阶段AR环境中还会显示场景体，而在应用阶段场景体只供人物交互而在用户视角中隐藏
+
+
+https://github.com/user-attachments/assets/fd90bb3f-1686-4aca-bf10-bbc60a1f4cc1
+
+
 ## 快速验证
 ### Depth Pro路径
 - 在终端cd depthpro_proj进入Depth Pro的文件夹
