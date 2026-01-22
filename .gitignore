@@ -21,3 +21,5 @@ __pycache__/
 *.pt
 *.pth
 *.ply
+
+ml-depth-pro/
