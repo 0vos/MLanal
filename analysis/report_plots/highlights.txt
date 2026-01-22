@@ -1,0 +1,7 @@
+rows: 6
+numeric_cols: 18
+brightness_mean: mean=120.064, std=7.432, min=109.513, max=128.848
+contrast_std: mean=56.728, std=7.629, min=44.834, max=65.053
+sharpness_laplacian_var: mean=159.287, std=53.384, min=75.055, max=214.017
+noise_sigma_est: mean=3.229, std=0.598, min=2.965, max=4.448
+megapixels: mean=24.470, std=0.000, min=24.470, max=24.470

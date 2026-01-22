@@ -1,0 +1,15 @@
+{
+  "image": "/Users/rufuslee/Documents/GitHub/backend/SpatialCapture_2026-01-15T02-30-04.724Z/mesh_000000/scene_image.png",
+  "labels": [
+    "wall",
+    "ceiling"
+  ],
+  "sam_type": "sam2.1_hiera_large",
+  "box_threshold": 0.12,
+  "text_threshold": 0.12,
+  "outputs": {
+    "wall": "mask_wall.png",
+    "ceiling": "mask_ceiling.png",
+    "__union__": "mask_union.png"
+  }
+}

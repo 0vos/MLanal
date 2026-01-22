@@ -1,0 +1,38 @@
+{
+  "capture_dir": "/Users/rufuslee/Documents/GitHub/backend/SpatialCapture_2026-01-15T02-30-04.724Z",
+  "frame_index": 0,
+  "image_file": "frame_000000.jpg",
+  "mask_method": "auto",
+  "mask_dilate": 4,
+  "inpaint_method": "opencv",
+  "depth_method": "depthpro",
+  "depth_model": "MiDaS_small",
+  "depth_device": "auto",
+  "min_depth": 0.5,
+  "max_depth": 10.0,
+  "depthpro_f_px_in": 961.577392578125,
+  "depthpro_f_px_out": 961.577392578125,
+  "intrinsics_saved": [
+    [
+      961.577392578125,
+      0.0,
+      481.41900634765625
+    ],
+    [
+      0.0,
+      961.577392578125,
+      633.815673828125
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "saved_image_wh": [
+    960,
+    1280
+  ],
+  "points": 0,
+  "export_ply": false
+}

@@ -17,8 +17,7 @@ __pycache__/
 .idea/
 
 *.DS_Store
-# dependency
-backend/
-ml-sharp-main/
 # model
 *.pt
+*.pth
+*.ply

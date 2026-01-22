@@ -1,0 +1,27 @@
+python depth_to_mesh.py \
+       --image IMG_9546.jpeg \
+       --mode plane \
+       --image-max-size 1024 \
+       --grid-step 3 \
+       --fit-bottom-frac 0.60 \
+       --plane-distance-thresh-m 0.02 \
+       --max-height-m 1.50 \
+       --tri-max-height-step-m 0.25 \
+       --tri-max-edge-m 0.28 \
+       --growth-filter \
+       --drop-floating \
+       --detect-table-plane \
+       --table-seed-normal-dot 0 \
+       --seed-band-m 0.08 \
+       --neighbor-max-height-step-m 0.10 \
+       --neighbor-max-depth-step-m 0.25 \
+       --neighbor-max-3d-step-m 0.10 \
+       --support-depth-pctl 92 --support-depth-margin-m 0.6 \
+       --seed-depth-pctl 65 --seed-depth-margin-m 0.30 \
+       --keep-nearest-seed-component \
+       --suppress-vertical-planes --vertical-plane-min-inliers 8000 \
+       --sam2-instances \
+       --sam2-max-area-frac 0.30 \
+       --stack-contact-dist-m 0.07 --stack-min-height-delta-m 0.02 \
+       --salvage-supported-instances \
+       --salvage-contact-band-m 0.06 --salvage-min-grid-area 25 --salvage-depth-margin-m 1.4

@@ -1,0 +1,23 @@
+{
+  "capture_dir": "SpatialCapture_2026-01-15T02-30-04.724Z",
+  "fuse_dir": "SpatialCapture_2026-01-15T02-30-04.724Z/fuse",
+  "input_pcd": "SpatialCapture_2026-01-15T02-30-04.724Z/fuse/fused_tsdf_mesh_3frames_recolor_fix_pcd.ply",
+  "depth_consistency_m": 0.2,
+  "cleaning": {
+    "clean_voxel": 0.0,
+    "stat_nb_neighbors": 30,
+    "stat_std_ratio": 2.0,
+    "radius_nb_points": 8,
+    "radius": 0.06,
+    "dbscan_eps": 0.06,
+    "dbscan_min_points": 30,
+    "min_cluster_size": 200
+  },
+  "counts": {
+    "points_in": 312482,
+    "points_clean": 302997,
+    "extend": 27839,
+    "fill": 275158,
+    "support_mean": 0.48953619599342346
+  }
+}

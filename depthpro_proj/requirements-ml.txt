@@ -1,0 +1,36 @@
+# Optional ML dependencies for Step1 (person removal + depth prediction)
+# Install with:
+#   pip install -r requirements-ml.txt
+
+# Core runtime
+# NOTE: DepthPro requires `numpy<2`, while newer OpenCV wheels started requiring `numpy>=2`.
+# These pins keep the optional-ML stack consistent.
+numpy==1.26.4
+opencv-python-headless==4.10.0.84
+
+# Depth prediction (MiDaS)
+torch>=2.1
+torchvision>=0.16
+timm>=0.9
+
+# Optional: better person mask extraction (foreground matting)
+rembg>=2.0
+onnxruntime>=1.16
+
+# PhySIC-style person masking (Grounded-SAM via LangSAM)
+# NOTE: `lang-sam` is not published on PyPI.
+# Install from source (matches PhySIC's install.sh pin):
+git+https://github.com/luca-medeiros/lang-segment-anything.git@918043ed4666eea04da88aa179eb8d27ef4b1a1d
+
+# Optional: AI inpainting (Diffusers)
+diffusers>=0.30
+transformers>=4.40
+accelerate>=0.30
+safetensors>=0.4
+huggingface-hub>=0.23
+
+# Optional: metric depth (Apple DepthPro)
+# Install (recommended) via a local clone to avoid surprises:
+#   git clone https://github.com/apple/ml-depth-pro
+#   pip install -e ml-depth-pro
+

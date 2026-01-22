@@ -1,0 +1,43 @@
+{
+  "capture_dir": "/Users/rufuslee/Documents/GitHub/backend/SpatialCapture_2026-01-15T02-30-04.724Z",
+  "frame_index": 0,
+  "mask_method": "auto",
+  "mask_dilate": 4,
+  "inpaint_method": "opencv",
+  "depth_method": "depthpro",
+  "depth_model": "MiDaS_small",
+  "depth_device": "auto",
+  "min_depth": 0.5,
+  "max_depth": 10.0,
+  "refine": {
+    "detail_sigma": 3.0,
+    "far_detail_suppression": 3.0,
+    "guided_radius": 24,
+    "guided_eps": 0.001,
+    "bilateral_d": 9,
+    "bilateral_sigma_color": 0.05,
+    "bilateral_sigma_space": 9.0
+  },
+  "displacement": {
+    "mode": "disparity",
+    "invert": true,
+    "clip_percentile": [
+      1.0,
+      99.0
+    ]
+  },
+  "normal": {
+    "strength": 1.0,
+    "method": "depth",
+    "y_flip": false
+  },
+  "outputs": {
+    "scene_image": "scene_image.png",
+    "person_mask": "person_mask.png",
+    "depth": "depth_pred.npy",
+    "depth_refined": "depth_refined.npy",
+    "displacement_u16": "displacement_u16.png",
+    "displacement_preview": "displacement_preview.png",
+    "normal_map": "normal_map.png"
+  }
+}

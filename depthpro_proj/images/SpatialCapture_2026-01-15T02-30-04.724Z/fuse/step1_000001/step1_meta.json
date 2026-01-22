@@ -1,0 +1,37 @@
+{
+  "capture_dir": "SpatialCapture_2026-01-15T02-30-04.724Z",
+  "frame_index": 1,
+  "image_file": "frame_000001.jpg",
+  "mask_method": "langsam",
+  "mask_dilate": 4,
+  "inpaint_method": "diffusers",
+  "depth_method": "depthpro",
+  "depth_model": "MiDaS_small",
+  "depth_device": "mps",
+  "min_depth": 0.5,
+  "max_depth": 10.0,
+  "depthpro_f_px_in": 512.5971069335938,
+  "depthpro_f_px_out": 512.5971069335938,
+  "intrinsics_saved": [
+    [
+      512.5971069335938,
+      0.0,
+      256.7388000488281
+    ],
+    [
+      0.0,
+      384.4478454589844,
+      253.4954071044922
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "saved_image_wh": [
+    512,
+    512
+  ],
+  "points": 262144
+}
