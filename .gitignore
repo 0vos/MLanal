@@ -1,0 +1,23 @@
+# Python bytecode
+*.pyc
+
+# Logs
+*.log
+
+# Virtualenv
+mlanalenv/
+
+# Build
+build/
+dist/
+__pycache__/
+
+# IDE
+.vscode/
+.idea/
+
+*.DS_Store
+# dependency
+ml-depth-pro/
+# model
+*.pt
