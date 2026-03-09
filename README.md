@@ -1,17 +1,17 @@
-# 虚拟视觉：场景体重建
-## 演示视频
-由于当时主摄像头的20米视觉裁剪，这个场景体只显示了一半即被截断，但仍可以进行视觉观察。左上角为人物的第一人称视角，和手机摄像头完全不相关。现在调试阶段AR环境中还会显示场景体，而在应用阶段场景体只供人物交互而在用户视角中隐藏
+# Virtual Vision: Scene Volume Reconstruction
+## Demo Video
+Due to the 20-meter visual clipping of the main camera at the time, this scene volume is only half displayed and truncated, but visual observation is still possible. The top left corner is the character's first-person perspective, completely unrelated to the phone camera. Currently, in the debugging phase, the scene volume is still displayed in the AR environment, while in the application phase, the scene volume is only for character interaction and is hidden from the user's perspective.
 
 
 https://github.com/user-attachments/assets/fd90bb3f-1686-4aca-bf10-bbc60a1f4cc1
 
 
-## 快速验证
-### Depth Pro路径
-- 在终端cd depthpro_proj进入Depth Pro的文件夹
-- git clone https://github.com/apple/ml-depth-pro 拉取depth pro仓库
-- 完成DepthPro相关配置，并下载模型；新开一个环境配置depthpro_proj的requirements.txt
-- 使用以下命令快速验证点云生成结果
+## Quick Start
+### Depth Pro Pipeline
+- In the terminal, `cd depthpro_proj` to enter the Depth Pro folder.
+- `git clone https://github.com/apple/ml-depth-pro` to pull the Depth Pro repository.
+- Complete the Depth Pro configuration and download the model; create a new environment and configure `requirements.txt` of `depthpro_proj`.
+- Use the following commands to quickly verify the point cloud generation results:
 ```bash
 mkdir -p recon_depthpro_raw_ply
 for img in images/*; do
@@ -25,10 +25,10 @@ for img in images/*; do
               --depth-device auto
 done
 ```
-### SHARP路径
-- cd ml-sharp-main进入sharp文件夹
-- 配置环境并推理生成
-## 其他
-iOS代码因为使用了Unity as a Library，涉及内容比较复杂，在此不展示了
+### SHARP Pipeline
+- `cd ml-sharp-main` to enter the SHARP folder.
+- Configure the environment and run inference to generate.
+## Other
+The iOS code uses Unity as a Library and involves complex content, so it is not shown here.
 
 
